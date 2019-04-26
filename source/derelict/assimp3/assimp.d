@@ -46,7 +46,7 @@ private {
     else static if(Derelict_OS_Mac)
         enum libNames = "libassimp.3.dylib";
     else static if(Derelict_OS_Posix)
-        enum libNames = "libassimp.so.3, libassimp.so.3.0.0";
+        enum libNames = "libassimp.so.4, libassimp.so.4.1.0";
     else
         static assert(0, "Need to implement ASSIMP3 libNames for this operating system.");
 }
